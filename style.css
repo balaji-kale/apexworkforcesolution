@@ -681,5 +681,125 @@ body {
     .about-wrapper {
         grid-template-columns: 1fr;
         gap: 50px;
+        
     }
 }
+/* --- Contact Section Styles --- */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-section .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Subtle line under the title */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #25D366;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* --- Form Container --- */
+.contact-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-4px);
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* --- Form Elements --- */
+#whatsapp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Even spacing between inputs */
+}
+
+#whatsapp-form input,
+#whatsapp-form select,
+#whatsapp-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e1e5eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Textarea specific styling */
+#whatsapp-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Focus effects for better UX */
+#whatsapp-form input:focus,
+#whatsapp-form select:focus,
+#whatsapp-form textarea:focus {
+    border-color: #25D366;
+    box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.15);
+}
+
+/* --- WhatsApp Button --- */
+#whatsapp-form .submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+#whatsapp-form .submit-btn:hover {
+    background-color: #1ebd58 !important; /* Slightly darker WhatsApp green on hover */
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    transform: translateY(-1px);
+}
+
+#whatsapp-form .submit-btn:active {
+    transform: translateY(1px);
+}
+
+#whatsapp-form .submit-btn i {
+    font-size: 1.3rem;
+}
+
+
